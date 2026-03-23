@@ -8,263 +8,280 @@
   </head>
   <body>
     <div class="app-shell">
-      <header class="topbar reveal">
-        <div class="brand-block">
-          <p class="eyebrow">CloudInsight</p>
-          <h1>Document intelligence with a calmer interface.</h1>
-          <p class="lede">
-            <div class="app-shell">
-              <div class="dashboard-frame">
-                <aside class="sidebar reveal">
-                  <div class="sidebar-brand">
-                    <span class="brand-mark">CI</span>
-                    <div>
-                      <p class="eyebrow">CloudInsight</p>
-                      <h2>Ops Console</h2>
-                    </div>
-                  </div>
-                  <nav class="sidebar-nav" aria-label="Primary">
-                    <a href="#" class="nav-link active">Workspace</a>
-                    <a href="#" class="nav-link">Documents</a>
-                    <a href="#" class="nav-link">Search</a>
-                    <a href="#" class="nav-link">Assistant</a>
-                    <a href="#" class="nav-link">Reports</a>
-                  </nav>
-                  <div class="sidebar-status glass-panel">
-                    <p class="section-kicker">Session</p>
-                    <h3>Ready for indexing</h3>
-                    <p>Upload a document to populate analysis cards and activate search context.</p>
-                  </div>
-                </aside>
+      <div class="dashboard-frame">
+        <aside class="sidebar reveal">
+          <div class="sidebar-brand">
+            <span class="brand-mark">CI</span>
+            <div>
+              <p class="eyebrow">CloudInsight</p>
+              <h2>Ops Console</h2>
+            </div>
+          </div>
 
-                <div class="main-area">
-                  <header class="topbar reveal">
-                    <div class="brand-block">
-                      <p class="eyebrow">CloudInsight</p>
-                      <h1>Document intelligence dashboard</h1>
-                      <p class="lede">
-                        Upload a file, inspect NLP signals, run semantic search, and chat over
-                        your indexed content from one clean workspace.
-                      </p>
-                    </div>
-                    <div class="topbar-actions">
-                      <div class="status-pill" id="health-pill">
-                        <span class="status-dot"></span>
-                        <span>Checking API</span>
-                      </div>
-                      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
-                        <span class="theme-toggle-track">
-                          <span class="theme-toggle-thumb"></span>
-                        </span>
-                        <span class="theme-toggle-label">Dark mode</span>
-                      </button>
-                    </div>
-                  </header>
+          <nav class="sidebar-nav" aria-label="Primary">
+            <a href="#workspace" class="nav-link active">Workspace</a>
+            <a href="#documents" class="nav-link">Documents</a>
+            <a href="#search" class="nav-link">Search</a>
+            <a href="#assistant" class="nav-link">Assistant</a>
+            <a href="#reports" class="nav-link">Reports</a>
+          </nav>
 
-                  <main class="layout">
-                    <section class="hero-grid reveal">
-                      <article class="hero-card glass-panel">
-                        <div class="section-heading">
-                          <p class="section-kicker">Pipeline</p>
-                          <h2>Ingest, analyze, retrieve</h2>
-                        </div>
-                        <div class="pipeline-rail">
-                          <div class="pipeline-node active">
-                            <span>01</span>
-                            <strong>Upload</strong>
-                          </div>
-                          <div class="pipeline-node">
-                            <span>02</span>
-                            <strong>Analyze</strong>
-                          </div>
-                          <div class="pipeline-node">
-                            <span>03</span>
-                            <strong>Search</strong>
-                          </div>
-                          <div class="pipeline-node">
-                            <span>04</span>
-                            <strong>Chat</strong>
-                          </div>
-                        </div>
-                        <div class="mini-metrics">
-                          <div class="metric-chip">
-                            <span class="metric-label">Files</span>
-                            <strong id="metric-file-name">No upload yet</strong>
-                          </div>
-                          <div class="metric-chip">
-                            <span class="metric-label">Document ID</span>
-                            <strong id="metric-document-id">Not indexed</strong>
-                          </div>
-                        </div>
-                      </article>
+          <div class="sidebar-status glass-panel">
+            <p class="section-kicker">Session</p>
+            <h3>Ready for indexing</h3>
+            <p>Upload a document to populate analysis cards and activate search context.</p>
+          </div>
+        </aside>
 
-                      <article class="upload-card glass-panel reveal">
-                        <div class="section-heading">
-                          <p class="section-kicker">Upload</p>
-                          <h2>Process a document</h2>
-                        </div>
-                        <form id="upload-form" class="upload-form">
-                          <label class="dropzone" for="file-input" id="dropzone">
-                            <input id="file-input" name="file" type="file" accept=".pdf,.docx,.txt,.md,.csv,.json,.html,.rtf,.log" required />
-                            <span class="dropzone-copy">
-                              <strong>Drop a supported file here</strong>
-                              <small>PDF, DOCX, TXT, MD, CSV, JSON, HTML, RTF, LOG</small>
-                              <small>or click to browse your files</small>
-                            </span>
-                            <span class="dropzone-meta" id="file-name-display">No file selected</span>
-                          </label>
-                          <label class="field">
-                            <span>Candidate labels</span>
-                            <input
-                              id="candidate-labels"
-                              type="text"
-                              placeholder="finance, legal, engineering, operations"
-                            />
-                          </label>
-                          <button class="primary-button" id="process-button" type="submit">
-                            <span>Process Document</span>
-                          </button>
-                        </form>
-                        <p class="inline-feedback" id="upload-feedback">Ready for a new document.</p>
-                      </article>
-                    </section>
-
-                    <section class="dashboard-grid reveal">
-                      <article class="overview-card glass-panel">
-                        <div class="section-heading inline">
-                          <div>
-                            <p class="section-kicker">Overview</p>
-                            <h2>Analysis snapshot</h2>
-                          </div>
-                          <div class="score-orb">
-                            <svg viewBox="0 0 120 120" class="score-ring">
-                              <circle cx="60" cy="60" r="48" class="score-ring-track"></circle>
-                              <circle cx="60" cy="60" r="48" class="score-ring-progress" id="score-ring"></circle>
-                            </svg>
-                            <div class="score-orb-copy">
-                              <strong id="classification-score">0%</strong>
-                              <span id="classification-label">No label</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="summary-panel">
-                          <p class="summary-label">Summary</p>
-                          <p id="summary-text" class="summary-text">
-                            Process a document to populate the dashboard.
-                          </p>
-                        </div>
-                        <div class="cvv-panel">
-                          <div>
-                            <p class="summary-label">CVV Visualizer</p>
-                            <strong id="cvv-score" class="cvv-score">0</strong>
-                            <p id="cvv-band" class="cvv-band">Awaiting analysis</p>
-                          </div>
-                          <div class="cvv-meter">
-                            <div id="cvv-fill" class="cvv-fill"></div>
-                          </div>
-                        </div>
-                        <div class="stats-grid">
-                          <div class="stat-card">
-                            <span>Document Type</span>
-                            <strong id="document-type">-</strong>
-                          </div>
-                          <div class="stat-card">
-                            <span>Keywords</span>
-                            <strong id="keyword-count">0</strong>
-                          </div>
-                          <div class="stat-card">
-                            <span>Entities</span>
-                            <strong id="entity-count">0</strong>
-                          </div>
-                          <div class="stat-card">
-                            <span>Chunks</span>
-                            <strong id="chunk-count">0</strong>
-                          </div>
-                        </div>
-                      </article>
-
-                      <article class="visual-card glass-panel">
-                        <div class="section-heading">
-                          <p class="section-kicker">Keywords</p>
-                          <h2>Topic strength</h2>
-                        </div>
-                        <div id="keyword-bars" class="bar-list empty-state">
-                          Keyword visualization appears here after processing.
-                        </div>
-                      </article>
-
-                      <article class="visual-card glass-panel">
-                        <div class="section-heading">
-                          <p class="section-kicker">Entities</p>
-                          <h2>Entity distribution</h2>
-                        </div>
-                        <div id="entity-chart" class="entity-chart empty-state">
-                          Entity visualization appears here after processing.
-                        </div>
-                      </article>
-                    </section>
-
-                    <section class="workspace-grid reveal">
-                      <article class="search-card glass-panel">
-                        <div class="section-heading">
-                          <p class="section-kicker">Semantic Search</p>
-                          <h2>Retrieve relevant passages</h2>
-                        </div>
-                        <form id="search-form" class="stack-form">
-                          <label class="field">
-                            <span>Search query</span>
-                            <input id="search-query" type="text" placeholder="Find mentions of compliance obligations" required />
-                          </label>
-                          <div class="field-row">
-                            <label class="field">
-                              <span>Top K</span>
-                              <input id="search-top-k" type="number" min="1" max="20" value="5" />
-                            </label>
-                            <label class="field">
-                              <span>Document filter</span>
-                              <input id="search-document-id" type="text" placeholder="Optional document ID" />
-                            </label>
-                          </div>
-                          <button class="secondary-button" type="submit">Run Search</button>
-                        </form>
-                        <div class="results-panel" id="search-results">
-                          <p class="empty-state">Search results will appear here.</p>
-                        </div>
-                      </article>
-
-                      <article class="chat-card glass-panel">
-                        <div class="section-heading">
-                          <p class="section-kicker">Conversational Querying</p>
-                          <h2>Ask the indexed corpus</h2>
-                        </div>
-                        <div class="chat-log" id="chat-log">
-                          <div class="message assistant">
-                            <span class="message-role">CloudInsight</span>
-                            <p>Ask a grounded question after you process at least one document.</p>
-                          </div>
-                        </div>
-                        <form id="chat-form" class="chat-form">
-                          <label class="field">
-                            <span>Question</span>
-                            <textarea id="chat-question" rows="3" placeholder="What are the main responsibilities described in this document?" required></textarea>
-                          </label>
-                          <div class="field-row">
-                            <label class="field">
-                              <span>Top K</span>
-                              <input id="chat-top-k" type="number" min="1" max="20" value="5" />
-                            </label>
-                            <label class="field">
-                              <span>Document filter</span>
-                              <input id="chat-document-id" type="text" placeholder="Optional document ID" />
-                            </label>
-                          </div>
-                          <button class="primary-button subtle" type="submit">Ask Question</button>
-                        </form>
-                      </article>
-                    </section>
-                  </main>
-                </div>
+        <div class="main-area">
+          <header class="topbar reveal" id="workspace">
+            <div class="brand-block">
+              <p class="eyebrow">CloudInsight</p>
+              <h1>Document intelligence dashboard</h1>
+              <p class="lede">
+                Upload a file, inspect NLP signals, run semantic search, and chat over
+                your indexed content from one clean workspace.
+              </p>
+            </div>
+            <div class="topbar-actions">
+              <div class="status-pill" id="health-pill">
+                <span class="status-dot"></span>
+                <span>Checking API</span>
               </div>
+              <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+                <span class="theme-toggle-track">
+                  <span class="theme-toggle-thumb"></span>
+                </span>
+                <span class="theme-toggle-label">Dark mode</span>
+              </button>
+            </div>
+          </header>
+
+          <main class="layout">
+            <section class="hero-grid reveal" id="documents">
+              <article class="hero-card glass-panel">
+                <div class="section-heading">
+                  <p class="section-kicker">Pipeline</p>
+                  <h2>Ingest, analyze, retrieve</h2>
+                </div>
+                <div class="pipeline-rail">
+                  <div class="pipeline-node active">
+                    <span>01</span>
+                    <strong>Upload</strong>
+                  </div>
+                  <div class="pipeline-node">
+                    <span>02</span>
+                    <strong>Analyze</strong>
+                  </div>
+                  <div class="pipeline-node">
+                    <span>03</span>
+                    <strong>Search</strong>
+                  </div>
+                  <div class="pipeline-node">
+                    <span>04</span>
+                    <strong>Chat</strong>
+                  </div>
+                </div>
+                <div class="mini-metrics">
+                  <div class="metric-chip">
+                    <span class="metric-label">Files</span>
+                    <strong id="metric-file-name">No upload yet</strong>
+                  </div>
+                  <div class="metric-chip">
+                    <span class="metric-label">Document ID</span>
+                    <strong id="metric-document-id">Not indexed</strong>
+                  </div>
+                </div>
+              </article>
+
+              <article class="upload-card glass-panel reveal">
+                <div class="section-heading">
+                  <p class="section-kicker">Upload</p>
+                  <h2>Process a document</h2>
+                </div>
+                <form id="upload-form" class="upload-form">
+                  <label class="dropzone" for="file-input" id="dropzone">
+                    <input
+                      id="file-input"
+                      name="file"
+                      type="file"
+                      accept=".pdf,.docx,.txt,.md,.csv,.json,.html,.rtf,.log"
+                      required
+                    />
+                    <span class="dropzone-copy">
+                      <strong>Drop a supported file here</strong>
+                      <small>PDF, DOCX, TXT, MD, CSV, JSON, HTML, RTF, LOG</small>
+                      <small>or click to browse your files</small>
+                    </span>
+                    <span class="dropzone-meta" id="file-name-display">No file selected</span>
+                  </label>
+                  <label class="field">
+                    <span>Candidate labels</span>
+                    <input
+                      id="candidate-labels"
+                      type="text"
+                      placeholder="finance, legal, engineering, operations"
+                    />
+                  </label>
+                  <button class="primary-button" id="process-button" type="submit">
+                    <span>Process Document</span>
+                  </button>
+                </form>
+                <p class="inline-feedback" id="upload-feedback">Ready for a new document.</p>
+              </article>
+            </section>
+
+            <section class="dashboard-grid reveal" id="reports">
+              <article class="overview-card glass-panel">
+                <div class="section-heading inline">
+                  <div>
+                    <p class="section-kicker">Overview</p>
+                    <h2>Analysis snapshot</h2>
+                  </div>
+                  <div class="score-orb">
+                    <svg viewBox="0 0 120 120" class="score-ring">
+                      <circle cx="60" cy="60" r="48" class="score-ring-track"></circle>
+                      <circle cx="60" cy="60" r="48" class="score-ring-progress" id="score-ring"></circle>
+                    </svg>
+                    <div class="score-orb-copy">
+                      <strong id="classification-score">0%</strong>
+                      <span id="classification-label">No label</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="summary-panel">
+                  <p class="summary-label">Summary</p>
+                  <p id="summary-text" class="summary-text">
+                    Process a document to populate the dashboard.
+                  </p>
+                </div>
+                <div class="cvv-panel">
+                  <div>
+                    <p class="summary-label">CVV Visualizer</p>
+                    <strong id="cvv-score" class="cvv-score">0</strong>
+                    <p id="cvv-band" class="cvv-band">Awaiting analysis</p>
+                  </div>
+                  <div class="cvv-meter">
+                    <div id="cvv-fill" class="cvv-fill"></div>
+                  </div>
+                </div>
+                <div class="stats-grid">
+                  <div class="stat-card">
+                    <span>Document Type</span>
+                    <strong id="document-type">-</strong>
+                  </div>
+                  <div class="stat-card">
+                    <span>Keywords</span>
+                    <strong id="keyword-count">0</strong>
+                  </div>
+                  <div class="stat-card">
+                    <span>Entities</span>
+                    <strong id="entity-count">0</strong>
+                  </div>
+                  <div class="stat-card">
+                    <span>Chunks</span>
+                    <strong id="chunk-count">0</strong>
+                  </div>
+                </div>
+              </article>
+
+              <article class="visual-card glass-panel">
+                <div class="section-heading">
+                  <p class="section-kicker">Keywords</p>
+                  <h2>Topic strength</h2>
+                </div>
+                <div id="keyword-bars" class="bar-list empty-state">
+                  Keyword visualization appears here after processing.
+                </div>
+              </article>
+
+              <article class="visual-card glass-panel">
+                <div class="section-heading">
+                  <p class="section-kicker">Entities</p>
+                  <h2>Entity distribution</h2>
+                </div>
+                <div id="entity-chart" class="entity-chart empty-state">
+                  Entity visualization appears here after processing.
+                </div>
+              </article>
+            </section>
+
+            <section class="workspace-grid reveal">
+              <article class="search-card glass-panel" id="search">
+                <div class="section-heading">
+                  <p class="section-kicker">Semantic Search</p>
+                  <h2>Retrieve relevant passages</h2>
+                </div>
+                <form id="search-form" class="stack-form">
+                  <label class="field">
+                    <span>Search query</span>
+                    <input
+                      id="search-query"
+                      type="text"
+                      placeholder="Find mentions of compliance obligations"
+                      required
+                    />
+                  </label>
+                  <div class="field-row">
+                    <label class="field">
+                      <span>Top K</span>
+                      <input id="search-top-k" type="number" min="1" max="20" value="5" />
+                    </label>
+                    <label class="field">
+                      <span>Document filter</span>
+                      <input id="search-document-id" type="text" placeholder="Optional document ID" />
+                    </label>
+                  </div>
+                  <button class="secondary-button" type="submit">Run Search</button>
+                </form>
+                <div class="results-panel" id="search-results">
+                  <p class="empty-state">Search results will appear here.</p>
+                </div>
+              </article>
+
+              <article class="chat-card glass-panel" id="assistant">
+                <div class="section-heading">
+                  <p class="section-kicker">Conversational Querying</p>
+                  <h2>Ask the indexed corpus</h2>
+                </div>
+                <div class="chat-log" id="chat-log">
+                  <div class="message assistant">
+                    <span class="message-role">CloudInsight</span>
+                    <p>Ask a grounded question after you process at least one document.</p>
+                  </div>
+                </div>
+                <form id="chat-form" class="chat-form">
+                  <label class="field">
+                    <span>Question</span>
+                    <textarea
+                      id="chat-question"
+                      rows="3"
+                      placeholder="What are the main responsibilities described in this document?"
+                      required
+                    ></textarea>
+                  </label>
+                  <div class="field-row">
+                    <label class="field">
+                      <span>Top K</span>
+                      <input id="chat-top-k" type="number" min="1" max="20" value="5" />
+                    </label>
+                    <label class="field">
+                      <span>Document filter</span>
+                      <input id="chat-document-id" type="text" placeholder="Optional document ID" />
+                    </label>
+                  </div>
+                  <button class="primary-button subtle" type="submit">Ask Question</button>
+                </form>
+              </article>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <template id="result-card-template">
+      <article class="result-card">
+        <div class="result-head">
           <span class="result-id"></span>
           <span class="result-score"></span>
         </div>

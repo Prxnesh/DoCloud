@@ -39,6 +39,7 @@ const els = {
   chatTopK: document.getElementById("chat-top-k"),
   chatDocumentId: document.getElementById("chat-document-id"),
   chatLog: document.getElementById("chat-log"),
+  navLinks: Array.from(document.querySelectorAll(".sidebar-nav .nav-link")),
   dropzone: document.getElementById("dropzone"),
   resultCardTemplate: document.getElementById("result-card-template"),
 };
@@ -55,6 +56,7 @@ const ENTITY_COLORS = [
 function initializeApp() {
   hydrateTheme();
   bindEvents();
+  initializeSidebarNavigation();
   setScoreRing(0);
   checkHealth();
 }
@@ -94,6 +96,71 @@ function bindEvents() {
     }
     els.fileInput.files = event.dataTransfer.files;
     updateSelectedFile(file.name);
+  });
+}
+
+function initializeSidebarNavigation() {
+  if (!els.navLinks.length) {
+    return;
+  }
+
+  els.navLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const href = link.getAttribute("href") || "";
+      if (!href.startsWith("#") || href.length <= 1) {
+        return;
+      }
+
+      const target = document.querySelector(href);
+      if (!target) {
+        return;
+      }
+
+      event.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      setActiveSidebarLink(href);
+      window.history.replaceState(null, "", href);
+    });
+  });
+
+  const sectionSelectors = els.navLinks
+    .map((link) => link.getAttribute("href"))
+    .filter((href) => href && href.startsWith("#") && href.length > 1);
+
+  const sectionElements = sectionSelectors
+    .map((selector) => document.querySelector(selector))
+    .filter(Boolean);
+
+  if (sectionElements.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visible?.target?.id) {
+          setActiveSidebarLink(`#${visible.target.id}`);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "-25% 0px -55% 0px",
+        threshold: [0.15, 0.4, 0.7],
+      },
+    );
+
+    sectionElements.forEach((section) => observer.observe(section));
+  }
+
+  if (window.location.hash) {
+    setActiveSidebarLink(window.location.hash);
+  }
+}
+
+function setActiveSidebarLink(targetHash) {
+  els.navLinks.forEach((link) => {
+    const isActive = link.getAttribute("href") === targetHash;
+    link.classList.toggle("active", isActive);
   });
 }
 

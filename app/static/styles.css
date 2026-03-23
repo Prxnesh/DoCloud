@@ -92,6 +92,10 @@ body::before {
   align-items: start;
 }
 
+.dashboard-frame > * {
+  min-width: 0;
+}
+
 .sidebar,
 .topbar,
 .hero-grid,
@@ -216,6 +220,7 @@ body::before {
 .main-area {
   display: grid;
   gap: 18px;
+  min-width: 0;
 }
 
 .topbar {
@@ -265,6 +270,7 @@ body::before {
   justify-content: flex-end;
   flex-wrap: wrap;
   gap: 10px;
+  max-width: 360px;
 }
 
 .status-pill,
@@ -339,6 +345,15 @@ body.dark .theme-toggle-thumb {
 .layout {
   display: grid;
   gap: 18px;
+  min-width: 0;
+}
+
+#workspace,
+#documents,
+#reports,
+#search,
+#assistant {
+  scroll-margin-top: 26px;
 }
 
 .hero-grid,
@@ -346,6 +361,7 @@ body.dark .theme-toggle-thumb {
 .workspace-grid {
   display: grid;
   gap: 18px;
+  min-width: 0;
 }
 
 .hero-grid {
@@ -445,6 +461,7 @@ body.dark .theme-toggle-thumb {
 .dropzone {
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.38);
+  min-width: 0;
 }
 
 .metric-chip {
@@ -886,6 +903,17 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .sidebar-nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .nav-link {
+    justify-content: center;
+    text-align: center;
+    min-height: 40px;
+  }
+
   .hero-grid,
   .workspace-grid {
     grid-template-columns: 1fr;
@@ -916,6 +944,7 @@ button {
   .topbar-actions {
     width: 100%;
     justify-content: flex-start;
+    max-width: 100%;
   }
 
   .hero-card,
@@ -935,5 +964,21 @@ button {
 
   .brand-block h1 {
     max-width: 100%;
+  }
+
+  .sidebar-nav {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .sidebar-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .status-pill,
+  .theme-toggle {
+    width: 100%;
+    justify-content: center;
   }
 }
