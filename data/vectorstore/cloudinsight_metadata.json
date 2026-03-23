@@ -1,0 +1,260 @@
+[
+  {
+    "chunk_id": "7ff624f77f8d76f1ffbcd6e2bac1a7249a4c2c5a963e54c81aeb24faa43c7ee4",
+    "document_id": "395cd5b6884a1ad3962c8030337ab767d26451c9b939195b228ea2346bccba53",
+    "chunk_index": 0,
+    "text": "This is a short test document about finance operations and compliance reporting for Q1.",
+    "start_char": 0,
+    "end_char": 87,
+    "token_count": 14,
+    "metadata": {
+      "line_count": 1,
+      "file_size_bytes": 87,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/0cfbdfcc2ff3452fa21217e0fe8aac9b_cloudinsight_test.txt",
+      "storage_backend": "local",
+      "original_char_count": 87,
+      "cleaned_char_count": 87,
+      "paragraph_count": 1,
+      "start_token_index": 0,
+      "end_token_index": 13
+    }
+  },
+  {
+    "chunk_id": "949ab073428d5adca720522824db8c4f64652779ab03a47eddaa313426c43aed",
+    "document_id": "1e4a3bdb05a59198d5019458cc92225f103ec09f4067c5bdc7bf32ed49907857",
+    "chunk_index": 0,
+    "text": "This is a short test document about finance operations and compliance reporting for Q1.",
+    "start_char": 0,
+    "end_char": 87,
+    "token_count": 14,
+    "metadata": {
+      "line_count": 1,
+      "file_size_bytes": 87,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/f30d1766d04b461ba22251325771df6c_cloudinsight_test.txt",
+      "storage_backend": "local",
+      "original_char_count": 87,
+      "cleaned_char_count": 87,
+      "paragraph_count": 1,
+      "start_token_index": 0,
+      "end_token_index": 13
+    }
+  },
+  {
+    "chunk_id": "a4373cb213def62a9cc21ae2730a36b532a8d74901636ba4c1712f7f37cd203b",
+    "document_id": "b4276a96a13916ba3abf605ec99e5a2dd2310f03e61353e659668a3e6c561701",
+    "chunk_index": 0,
+    "text": "This is a short test document about finance operations and compliance reporting for Q1.",
+    "start_char": 0,
+    "end_char": 87,
+    "token_count": 14,
+    "metadata": {
+      "line_count": 1,
+      "file_size_bytes": 87,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/e59d71097cae4dafbe237a794cf84553_cloudinsight_test.txt",
+      "storage_backend": "local",
+      "original_char_count": 87,
+      "cleaned_char_count": 87,
+      "paragraph_count": 1,
+      "start_token_index": 0,
+      "end_token_index": 13
+    }
+  },
+  {
+    "chunk_id": "a9675a8471e3523bc9188bdbb4616f4048a1899fd292c8f80aff067fb765f4d0",
+    "document_id": "e1d06a3277a73fcd86744ca3f59ddf92cf5ba0461374b34b32f6a64f9ec25fac",
+    "chunk_index": 0,
+    "text": "Study Guide GitHub Copilot Get exam-ready for the GitHub Copilot Certification with our comprehensive study guide. We\u2019ve curated the essential resources and learning activities to better prepare you for the exam and boost your chances of success. Objective Domains An objective domain for a certification exam, often referred to as a \u201cdomain\u201d or \u201cexam domain,\u201d is a structured outline or framework that defines the specific knowledge, skills, and topics that the certification exam will cover . It provides a clear roadmap for what candidates should expect to encounter on the exam and what they need to study and prepare for . The domains provided in this study guide are intended to provide insight into the topic categories covered in the GitHub Copilot exam, along with the learning objectives within each domain. Domain Breakdown Exam Percentages Domain 1: Responsible AI 7% Domain 2: GitHub Copilot plans and features 31% Domain 3: How GitHub Copilot works and handles data 15% Domain 4: Prompt crafting and Prompt engineering 9% Domain 5: Developer use cases for AI 14% Domain 6: Testing with GitHub Copilot 9% Domain 7: Privacy fundamentals and context exclusions 15% Audience Profile This exam is designed for individuals in the field of software development who are proficient in using GitHub, including software developers, administrators, and project managers. This certification is intended for individuals who have a foundational understanding of GitHub Copilot as a product and its available features, along with hands-on experience in optimizing software development workflows using GitHub Copilot. Recommendations",
+    "start_char": 0,
+    "end_char": 1630,
+    "token_count": 250,
+    "metadata": {
+      "page_count": 8,
+      "pages_with_text": 8,
+      "pages_processed": 8,
+      "file_size_bytes": 697555,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/6e54f9db5bb64dae945880c5cb9f21f6_github-copilot-exam-preparation-study-guide.pdf",
+      "storage_backend": "local",
+      "original_char_count": 11972,
+      "cleaned_char_count": 11972,
+      "paragraph_count": 9,
+      "start_token_index": 0,
+      "end_token_index": 249
+    }
+  },
+  {
+    "chunk_id": "8d1cf852a63a3628a236675680b3fbf19b7a0098a9abfabf8c055dd3b42faac3",
+    "document_id": "e1d06a3277a73fcd86744ca3f59ddf92cf5ba0461374b34b32f6a64f9ec25fac",
+    "chunk_index": 1,
+    "text": "software developers, administrators, and project managers. This certification is intended for individuals who have a foundational understanding of GitHub Copilot as a product and its available features, along with hands-on experience in optimizing software development workflows using GitHub Copilot. Recommendations and Best Practices for Success To increase your chances of success in passing the GitHub Copilot exam, candidates should have a fundamental understanding of GitHub, as well as hands-on experience in using GitHub Copilot features. The recommended learning paths for this exam provide you with an in-depth study of the learning content, followed by hands-on exercises and preparation assessment questions that were created to enable you to fine-tune your knowledge and readiness for the certification exam.\n\nStudy Guide GitHub Copilot Content Resources The following resources have been created in collaboration with GitHub as recommended content that covers the learning objectives in each domain for the GitHub Copilot exam. Both Microsoft Learn and LinkedIn Learning provide a complete learning path for the exam, but offer a different learning experience. Microsoft Learn In collaboration with MS Learn, we\u2019ve created two learning paths that offer a comprehensive collection of modules designed to prepare you for using GitHub Copilot effectively. Learn how to enhance your coding experience with AI-powered assistance at every stage of your development lifecycle. GitHub Copilot is an AI tool integrated into GitHub that helps you write code faster and with fewer errors by suggesting code snippets, completing lines, and even generating entire functions. The following modules will guide you through",
+    "start_char": 1314,
+    "end_char": 3034,
+    "token_count": 250,
+    "metadata": {
+      "page_count": 8,
+      "pages_with_text": 8,
+      "pages_processed": 8,
+      "file_size_bytes": 697555,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/6e54f9db5bb64dae945880c5cb9f21f6_github-copilot-exam-preparation-study-guide.pdf",
+      "storage_backend": "local",
+      "original_char_count": 11972,
+      "cleaned_char_count": 11972,
+      "paragraph_count": 9,
+      "start_token_index": 210,
+      "end_token_index": 459
+    }
+  },
+  {
+    "chunk_id": "e20ef2d71aab00b48f9da152b1040d0026bd6e3935b3148797d7c8d8e2609970",
+    "document_id": "e1d06a3277a73fcd86744ca3f59ddf92cf5ba0461374b34b32f6a64f9ec25fac",
+    "chunk_index": 2,
+    "text": "your development lifecycle. GitHub Copilot is an AI tool integrated into GitHub that helps you write code faster and with fewer errors by suggesting code snippets, completing lines, and even generating entire functions. The following modules will guide you through GitHub Copilot's capabilities, equipping you with the skills needed to recognize, apply, and evaluate these features within your own GitHub environment. -GitHub Copilot Fundamentals - Understand the AI Pair Programmer -Accelerate App Development by Using GitHub Copilot LinkedIn Learning Master the art of coding efficiency and quality with AI-powered assistance throughout your software development process by exploring the Prepare for the GitHub Copilot Certification learning path on LinkedIn Learning. With GitHub Copilot, you have access to a powerful AI-driven tool that helps you write code faster, suggests improvements, and generates entire functions. This video-based learning path features a series of engaging courses that will guide you through the capabilities of GitHub Copilot. By the end of this learning path, you\u2019ll be well-equipped with the knowledge and expertise to seamlessly apply, assess, and maximize GitHub Copilot's features within your coding environment. (Learning path coming soon)\n\nExplain responsible usage of AI Describe the risks associated with using AI Explain the limitations of using generative AI tools (dept of the source data for the model, bias in the data, etc.) Explain the need to validate the output of AI tools Identify how to operate a responsible AI Identify the potential harms of generative AI (bias, secure code, fairness, privacy, transparency) Explain how to",
+    "start_char": 2770,
+    "end_char": 4448,
+    "token_count": 250,
+    "metadata": {
+      "page_count": 8,
+      "pages_with_text": 8,
+      "pages_processed": 8,
+      "file_size_bytes": 697555,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/6e54f9db5bb64dae945880c5cb9f21f6_github-copilot-exam-preparation-study-guide.pdf",
+      "storage_backend": "local",
+      "original_char_count": 11972,
+      "cleaned_char_count": 11972,
+      "paragraph_count": 9,
+      "start_token_index": 420,
+      "end_token_index": 669
+    }
+  },
+  {
+    "chunk_id": "ce9e7b7983aa008ca9321367d85893a494cff1982783430a7742e5650065c781",
+    "document_id": "e1d06a3277a73fcd86744ca3f59ddf92cf5ba0461374b34b32f6a64f9ec25fac",
+    "chunk_index": 3,
+    "text": "the model, bias in the data, etc.) Explain the need to validate the output of AI tools Identify how to operate a responsible AI Identify the potential harms of generative AI (bias, secure code, fairness, privacy, transparency) Explain how to mitigate the occurrence of potential harms Explain ethical AI Domain 1: Responsible AI Study Guide GitHub Copilot Domain 2: GitHub Copilot plans and features Identify the di\ufb00erent GitHub Copilot plans Understand the di\ufb00erences between Copilot Individual, Copilot Business, Copilot Enterprise, and Copilot Business for non-GHE Understand Copilot for non-GitHub customers De\ufb01ne GitHub Copilot in the IDE De\ufb01ne GitHub Copilot Chat in the IDE Describe the di\ufb00erent ways to trigger GitHub Copilot (chat, inline chat, suggestions, multiple suggestions, exception handling, CLI) Identify the main features with GitHub Copilot Individual Explain the di\ufb00erence between GitHub Copilot Individual and GitHub Copilot Business (data exclusions, IP indemnity, billing, etc. ) Understand the available features in the IDE for GitHub Copilot Individual\n\nIdentify the main features of GitHub Copilot Business Demonstrate how to exclude speci\ufb01c \ufb01les from GitHub Copilot Demonstrate how to establish organization-wide policy management Describe the purpose of organization audit logs for GitHub Copilot Business Explain how to search audit log events for GitHub Copilot Business Explain how to manage GitHub Copilot Business subscriptions via the REST API Identify the main features with GitHub Copilot Chat Identify the use cases where GitHub Copilot Chat is most e\ufb00ective Explain how to improve performance for GitHub Copilot Chat Identify the limitations of using GitHub Copilot",
+    "start_char": 4207,
+    "end_char": 5911,
+    "token_count": 250,
+    "metadata": {
+      "page_count": 8,
+      "pages_with_text": 8,
+      "pages_processed": 8,
+      "file_size_bytes": 697555,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/6e54f9db5bb64dae945880c5cb9f21f6_github-copilot-exam-preparation-study-guide.pdf",
+      "storage_backend": "local",
+      "original_char_count": 11972,
+      "cleaned_char_count": 11972,
+      "paragraph_count": 9,
+      "start_token_index": 630,
+      "end_token_index": 879
+    }
+  },
+  {
+    "chunk_id": "d0a6904f7fe8888dd83b3f03c3ce1c6925f49dff34bace6ceea5c1cebee52ee9",
+    "document_id": "e1d06a3277a73fcd86744ca3f59ddf92cf5ba0461374b34b32f6a64f9ec25fac",
+    "chunk_index": 4,
+    "text": "subscriptions via the REST API Identify the main features with GitHub Copilot Chat Identify the use cases where GitHub Copilot Chat is most e\ufb00ective Explain how to improve performance for GitHub Copilot Chat Identify the limitations of using GitHub Copilot Chat Identify the available options for using code suggestions from GitHub Copilot Chat Explain how to share feedback about GitHub Copilot Chat Identify the common best practices for using GitHub Copilot Chat Identify the available slash commands when using GitHub Copilot Chat Study Guide GitHub Copilot Identify the main features with GitHub Copilot Enterprise Explain the bene\ufb01ts of using GitHub Copilot Chat on GitHub.com Explain GitHub Copilot pull request summaries Explain how to con\ufb01gure and use Knowledge Bases within GitHub Copilot Enterprise Describe the di\ufb00erent types of knowledge that can be stores in a Knowledge Base (e.g. code snippets, best practices, design patterns) Explain the bene\ufb01ts of using Knowledge Bases for code completion and review (e.g. improve code quality, consistency, and e\ufb03ciency) Describe instructions for creating, managing, and searching Knowledge Bases within GitHub Copilot Enterprise, including details on indexing and other relevant con\ufb01guration steps Explain the bene\ufb01ts of using custom models\n\nUsing GitHub Copilot in the CLI Discuss the steps for installing GitHub Copilot in the CLI Identify the common commands when using GitHub Copilot in the CLI Identify the multiple settings you can con\ufb01gure within GitHub Copilot in the CLI Describe the data pipeline lifecycle of GitHub Copilot code suggestions in the IDE Visualize the lifecycle of a GitHub",
+    "start_char": 5655,
+    "end_char": 7308,
+    "token_count": 250,
+    "metadata": {
+      "page_count": 8,
+      "pages_with_text": 8,
+      "pages_processed": 8,
+      "file_size_bytes": 697555,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/6e54f9db5bb64dae945880c5cb9f21f6_github-copilot-exam-preparation-study-guide.pdf",
+      "storage_backend": "local",
+      "original_char_count": 11972,
+      "cleaned_char_count": 11972,
+      "paragraph_count": 9,
+      "start_token_index": 840,
+      "end_token_index": 1089
+    }
+  },
+  {
+    "chunk_id": "2af0ee8c1d3462b2abd16787146b73ead99e389b2ab0ea3216837ab914b64e11",
+    "document_id": "e1d06a3277a73fcd86744ca3f59ddf92cf5ba0461374b34b32f6a64f9ec25fac",
+    "chunk_index": 5,
+    "text": "commands when using GitHub Copilot in the CLI Identify the multiple settings you can con\ufb01gure within GitHub Copilot in the CLI Describe the data pipeline lifecycle of GitHub Copilot code suggestions in the IDE Visualize the lifecycle of a GitHub Copilot code suggestion Explain how GitHub Copilot gathers context Explain how GitHub Copilot builds a prompt Describe th proxy service and the \ufb01lters each prompt goes through Describe how the large language model produces its response Explain the post-processing of GitHub Copilot\u2019s responses through the proxy server Identify how GitHub Copilot identi\ufb01es matching code Domain 3: How GitHub Copilot works and handles data Describe how GitHub Copilot handles data Describe how the data in GitHub Copilot individual is used and shared Explain the data \ufb02ow for GitHub Copilot code completion Explain the data \ufb02ow for GitHub Copilot Chat Describe the di\ufb00erent types of input processing for GitHub Copilot Chat (types of prompts it was designed for) Study Guide GitHub Copilot Describe the limitations of GitHub Copilot (and LLMs in general) Describe the e\ufb00ect of most seen examples on the source data Describe the age of code suggestions (how old and relevant the data is) Describe the nature of GitHub Copilot providing reasoning and context from a prompt vs calculations Describe limited context windows\n\nDescribe the fundamentals of prompt crafting Describe how the context for the prompt is determined Describe the language options for promoting GitHub Copilot Describe the di\ufb00erent parts of a prompt Describe the role of prompting Describe the",
+    "start_char": 7063,
+    "end_char": 8654,
+    "token_count": 250,
+    "metadata": {
+      "page_count": 8,
+      "pages_with_text": 8,
+      "pages_processed": 8,
+      "file_size_bytes": 697555,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/6e54f9db5bb64dae945880c5cb9f21f6_github-copilot-exam-preparation-study-guide.pdf",
+      "storage_backend": "local",
+      "original_char_count": 11972,
+      "cleaned_char_count": 11972,
+      "paragraph_count": 9,
+      "start_token_index": 1050,
+      "end_token_index": 1299
+    }
+  },
+  {
+    "chunk_id": "0f9e62a34d6f709f809549c730c80e54217efa8e2744d1d44b274c7376e31afe",
+    "document_id": "e1d06a3277a73fcd86744ca3f59ddf92cf5ba0461374b34b32f6a64f9ec25fac",
+    "chunk_index": 6,
+    "text": "limited context windows\n\nDescribe the fundamentals of prompt crafting Describe how the context for the prompt is determined Describe the language options for promoting GitHub Copilot Describe the di\ufb00erent parts of a prompt Describe the role of prompting Describe the di\ufb00erence between zero-shot and few-shot prompting Describe the way chat history is used with GitHub Copilot Identify prompt crafting best practices when using GitHub Copilot Study Guide GitHub Copilot Domain 4: Prompt Crafting and Prompt Engineering Describe the fundamentals of prompt engineering Explain prompt engineering principles, training methods, and best practices Describe the prompt process \ufb02ow Improve developer productivity Describe how AI can improve common use cases for developer productivity -Learning new programming languages and frameworks -Language translation -Context switching -Writing documentation -Personalized context-aware responses -Generating sample data -Modernizing legacy applications -Debugging code -Data science -Code refactoring Discuss how GitHub Copilot can help with SDLC (Software Development Lifecycle) management Describe the limitations of using GitHub Copilot Describe how to use the productivity API to see how GitHub Copilot impacts coding Domain 5: Developer use cases for AI\n\ns\n\nStudy Guide GitHub Copilot Domain 6: Testing with GitHub Copilot Describe the options for generating testing for your code Describe how GitHub Copilot can be used to add unit tests, integration tests, and other test types to your code Explain how GitHub Copilot can assist in identifying edge cases and suggesting tests to address them Describe the di\ufb00erent SKUs for GitHub Copilot Describe the di\ufb00erent SKUs and the privacy considerations for GitHub",
+    "start_char": 8388,
+    "end_char": 10135,
+    "token_count": 250,
+    "metadata": {
+      "page_count": 8,
+      "pages_with_text": 8,
+      "pages_processed": 8,
+      "file_size_bytes": 697555,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/6e54f9db5bb64dae945880c5cb9f21f6_github-copilot-exam-preparation-study-guide.pdf",
+      "storage_backend": "local",
+      "original_char_count": 11972,
+      "cleaned_char_count": 11972,
+      "paragraph_count": 9,
+      "start_token_index": 1260,
+      "end_token_index": 1509
+    }
+  },
+  {
+    "chunk_id": "b80d54c3a58617ecab85388435356c70bb3bfcc7ad33e631ba547d45c3e5d6a2",
+    "document_id": "e1d06a3277a73fcd86744ca3f59ddf92cf5ba0461374b34b32f6a64f9ec25fac",
+    "chunk_index": 7,
+    "text": "and other test types to your code Explain how GitHub Copilot can assist in identifying edge cases and suggesting tests to address them Describe the di\ufb00erent SKUs for GitHub Copilot Describe the di\ufb00erent SKUs and the privacy considerations for GitHub Copilot Describe the di\ufb00erent code suggestion con\ufb01guration options on the organization level Describe the GitHub Copilot Editor con\ufb01g \ufb01le Domain 7: Privacy fundamentals and context exclusions Enhance code quality through testing Describe how to improve the e\ufb00ectiveness of existing tests with GitHub Copilot\u2019s suggestions Describe how to generate boilerplate code for various tests types using GitHub Copilot Explain how GitHub Copilot can help write assertions for di\ufb00erent testing scenarios Leverage GitHub Copilot for security and performance Describe how GitHub Copilot can learn from existing tests to suggest improvements and identify potential issues in the code Explain how to use GitHub Copilot Enterprise for collaborative code reviews, leveraging security best practices, and performance considerations Explain how GitHub Copilot can identify potential security vulnerabilities in your code Describe how GitHub Copilot can suggest code optimizations for improved performance\n\nStudy Guide GitHub Copilot Identify content exclusions Describe how to con\ufb01gure content exclusions in a repository and organization Explain the e\ufb00ects of content exlcusions Explain the limitations of content exclusions Describe the ownership of GitHub Copilot outputs Safeguards Describe the duplication detector \ufb01lter Explain contractual protection Explain how to con\ufb01ture GitHub Copilot settings on GitHub.com -Enabling / disabling duplication detection -Enabling / disabling prompt and suggestion collection Describe security checks and warnings Troubleshooting Explain",
+    "start_char": 9886,
+    "end_char": 11695,
+    "token_count": 250,
+    "metadata": {
+      "page_count": 8,
+      "pages_with_text": 8,
+      "pages_processed": 8,
+      "file_size_bytes": 697555,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/6e54f9db5bb64dae945880c5cb9f21f6_github-copilot-exam-preparation-study-guide.pdf",
+      "storage_backend": "local",
+      "original_char_count": 11972,
+      "cleaned_char_count": 11972,
+      "paragraph_count": 9,
+      "start_token_index": 1470,
+      "end_token_index": 1719
+    }
+  },
+  {
+    "chunk_id": "ae63180aca936390edfae36a58f35d7c70cca17391c63b86a811c64c2c54b436",
+    "document_id": "e1d06a3277a73fcd86744ca3f59ddf92cf5ba0461374b34b32f6a64f9ec25fac",
+    "chunk_index": 8,
+    "text": "GitHub Copilot outputs Safeguards Describe the duplication detector \ufb01lter Explain contractual protection Explain how to con\ufb01ture GitHub Copilot settings on GitHub.com -Enabling / disabling duplication detection -Enabling / disabling prompt and suggestion collection Describe security checks and warnings Troubleshooting Explain how to solve the issue if code suggestions are not showing in your editor for some \ufb01les Explain why context exclusions may not be applied Explain how to trigger GitHub Copilot when suggestions are either absent or not ideal Explain steps for context exclusions in code editors",
+    "start_char": 11368,
+    "end_char": 11972,
+    "token_count": 87,
+    "metadata": {
+      "page_count": 8,
+      "pages_with_text": 8,
+      "pages_processed": 8,
+      "file_size_bytes": 697555,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/6e54f9db5bb64dae945880c5cb9f21f6_github-copilot-exam-preparation-study-guide.pdf",
+      "storage_backend": "local",
+      "original_char_count": 11972,
+      "cleaned_char_count": 11972,
+      "paragraph_count": 9,
+      "start_token_index": 1680,
+      "end_token_index": 1766
+    }
+  }
+]

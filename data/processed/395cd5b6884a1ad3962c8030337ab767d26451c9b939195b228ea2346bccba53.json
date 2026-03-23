@@ -1,0 +1,133 @@
+{
+  "document": {
+    "document_id": "395cd5b6884a1ad3962c8030337ab767d26451c9b939195b228ea2346bccba53",
+    "source_path": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/0cfbdfcc2ff3452fa21217e0fe8aac9b_cloudinsight_test.txt",
+    "file_name": "0cfbdfcc2ff3452fa21217e0fe8aac9b_cloudinsight_test.txt",
+    "document_type": "txt",
+    "text": "This is a short test document about finance operations and compliance reporting for Q1.",
+    "metadata": {
+      "line_count": 1,
+      "file_size_bytes": 87
+    }
+  },
+  "cleaned_document": {
+    "document_id": "395cd5b6884a1ad3962c8030337ab767d26451c9b939195b228ea2346bccba53",
+    "cleaned_text": "This is a short test document about finance operations and compliance reporting for Q1.",
+    "metadata": {
+      "line_count": 1,
+      "file_size_bytes": 87,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/0cfbdfcc2ff3452fa21217e0fe8aac9b_cloudinsight_test.txt",
+      "storage_backend": "local",
+      "original_char_count": 87,
+      "cleaned_char_count": 87,
+      "paragraph_count": 1
+    }
+  },
+  "chunking": {
+    "document_id": "395cd5b6884a1ad3962c8030337ab767d26451c9b939195b228ea2346bccba53",
+    "chunks": [
+      {
+        "chunk_id": "7ff624f77f8d76f1ffbcd6e2bac1a7249a4c2c5a963e54c81aeb24faa43c7ee4",
+        "document_id": "395cd5b6884a1ad3962c8030337ab767d26451c9b939195b228ea2346bccba53",
+        "chunk_index": 0,
+        "text": "This is a short test document about finance operations and compliance reporting for Q1.",
+        "start_char": 0,
+        "end_char": 87,
+        "token_count": 14,
+        "metadata": {
+          "line_count": 1,
+          "file_size_bytes": 87,
+          "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/0cfbdfcc2ff3452fa21217e0fe8aac9b_cloudinsight_test.txt",
+          "storage_backend": "local",
+          "original_char_count": 87,
+          "cleaned_char_count": 87,
+          "paragraph_count": 1,
+          "start_token_index": 0,
+          "end_token_index": 13
+        }
+      }
+    ],
+    "metadata": {
+      "line_count": 1,
+      "file_size_bytes": 87,
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/0cfbdfcc2ff3452fa21217e0fe8aac9b_cloudinsight_test.txt",
+      "storage_backend": "local",
+      "original_char_count": 87,
+      "cleaned_char_count": 87,
+      "paragraph_count": 1,
+      "chunk_count": 1,
+      "chunk_size": 250,
+      "chunk_overlap": 40
+    }
+  },
+  "analysis": {
+    "document_id": "395cd5b6884a1ad3962c8030337ab767d26451c9b939195b228ea2346bccba53",
+    "summary": "This is a short test document about finance operations and compliance reporting for Q1.She onlyManO \"o only only only still only onlyMan only only one only only had had only only These only only un one had only had only these only only was only un un only only \" only only those only only is only only they only only the only only- only one- only only always one only one both only only nearly only onlyTE only only S- one only un only had un one only teams only only Only only only their only only this only only that only only our only only these one one one only had one onlyTE one only always only only both only one one Only only one their only one a one onlyone only onlyte only only a only only to one only to only one to only onlyto only only at only only One only only between only oneTE only one",
+    "classification": {
+      "label": "finance",
+      "score": 0.7691294550895691,
+      "metadata": {
+        "candidate_labels": [
+          "finance",
+          "legal",
+          "human resources",
+          "engineering",
+          "sales",
+          "operations",
+          "research",
+          "compliance"
+        ]
+      }
+    },
+    "entities": [],
+    "keywords": [
+      {
+        "keyword": "finance",
+        "score": 0.4665,
+        "metadata": {}
+      },
+      {
+        "keyword": "compliance",
+        "score": 0.4451,
+        "metadata": {}
+      },
+      {
+        "keyword": "document",
+        "score": 0.4374,
+        "metadata": {}
+      },
+      {
+        "keyword": "q1",
+        "score": 0.351,
+        "metadata": {}
+      },
+      {
+        "keyword": "reporting",
+        "score": 0.3034,
+        "metadata": {}
+      },
+      {
+        "keyword": "test",
+        "score": 0.2966,
+        "metadata": {}
+      },
+      {
+        "keyword": "short",
+        "score": 0.2606,
+        "metadata": {}
+      },
+      {
+        "keyword": "operations",
+        "score": 0.2424,
+        "metadata": {}
+      }
+    ],
+    "metadata": {
+      "generated_at": "2026-03-23T08:28:16.959995+00:00"
+    }
+  },
+  "metadata": {
+    "stored_object_id": "0cfbdfcc2ff3452fa21217e0fe8aac9b",
+    "stored_location": "/Users/pranesh/Devloper/Cloud Product/Doc/data/uploads/0cfbdfcc2ff3452fa21217e0fe8aac9b_cloudinsight_test.txt"
+  }
+}

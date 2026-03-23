@@ -1,0 +1,58 @@
+{
+  "document": {
+    "document_id": "doc-1",
+    "source_path": "/Users/pranesh/Devloper/Cloud Product/Doc/.tmp_pipeline_test/uploads/6fbbc922f7a545eda8bc9adb1e488c97_sample.txt",
+    "file_name": "sample.txt",
+    "document_type": "txt",
+    "text": "This is a test document for the pipeline.",
+    "metadata": {}
+  },
+  "cleaned_document": {
+    "document_id": "doc-1",
+    "cleaned_text": "This is a test document for the pipeline.",
+    "metadata": {
+      "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/.tmp_pipeline_test/uploads/6fbbc922f7a545eda8bc9adb1e488c97_sample.txt",
+      "storage_backend": "local"
+    }
+  },
+  "chunking": {
+    "document_id": "doc-1",
+    "chunks": [
+      {
+        "chunk_id": "chunk-1",
+        "document_id": "doc-1",
+        "chunk_index": 0,
+        "text": "This is a test document for the pipeline.",
+        "start_char": 0,
+        "end_char": 41,
+        "token_count": 8,
+        "metadata": {
+          "storage_location": "/Users/pranesh/Devloper/Cloud Product/Doc/.tmp_pipeline_test/uploads/6fbbc922f7a545eda8bc9adb1e488c97_sample.txt",
+          "storage_backend": "local"
+        }
+      }
+    ],
+    "metadata": {
+      "chunk_size": 250,
+      "chunk_overlap": 40
+    }
+  },
+  "analysis": {
+    "document_id": "doc-1",
+    "summary": "summary",
+    "classification": {
+      "label": "engineering",
+      "score": 0.99,
+      "metadata": {}
+    },
+    "entities": [],
+    "keywords": [],
+    "metadata": {
+      "generated_at": "2026-03-23T07:57:01.556551+00:00"
+    }
+  },
+  "metadata": {
+    "stored_object_id": "6fbbc922f7a545eda8bc9adb1e488c97",
+    "stored_location": "/Users/pranesh/Devloper/Cloud Product/Doc/.tmp_pipeline_test/uploads/6fbbc922f7a545eda8bc9adb1e488c97_sample.txt"
+  }
+}
