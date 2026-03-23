@@ -49,6 +49,7 @@ class RAGPipeline:
         question: str,
         top_k: int = 5,
         document_id: str | None = None,
+        history: list[dict[str, str]] | None = None,
     ) -> ChatResponse:
         """Answer a question grounded in retrieved document chunks."""
 
@@ -69,7 +70,7 @@ class RAGPipeline:
                 metadata={"retrieved_chunks": 0},
             )
 
-        prompt = self._build_prompt(question, results)
+        prompt = self._build_prompt(question, results, history)
         generator = self._get_pipeline()
 
         try:
@@ -95,7 +96,12 @@ class RAGPipeline:
             metadata=metadata,
         )
 
-    def _build_prompt(self, question: str, results: list[SearchResult]) -> str:
+    def _build_prompt(
+        self,
+        question: str,
+        results: list[SearchResult],
+        history: list[dict[str, str]] | None = None,
+    ) -> str:
         """Create a grounded prompt from retrieved passages."""
 
         context = "\n\n".join(
@@ -103,13 +109,37 @@ class RAGPipeline:
             for index, result in enumerate(results)
         )
 
+        conversation_block = self._format_history(history)
+
         return (
             "Answer the question using only the provided context. "
             "If the context is insufficient, say so clearly.\n\n"
+            f"{conversation_block}"
             f"{context}\n\n"
             f"Question: {question}\n"
             "Answer:"
         )
+
+    def _format_history(self, history: list[dict[str, str]] | None) -> str:
+        """Convert prior conversation turns into a short prompt segment."""
+
+        if not history:
+            return ""
+
+        lines = ["Conversation history:"]
+        for turn in history[-6:]:
+            role = str(turn.get("role", "user")).strip().lower()
+            text = str(turn.get("text", "")).strip()
+            if not text:
+                continue
+
+            speaker = "User" if role == "user" else "Assistant"
+            lines.append(f"{speaker}: {text}")
+
+        if len(lines) == 1:
+            return ""
+
+        return "\n".join(lines) + "\n\n"
 
     def _get_pipeline(self):
         """Lazily load the local chat generation model."""

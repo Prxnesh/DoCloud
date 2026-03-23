@@ -114,6 +114,7 @@ class ChatService(Protocol):
         question: str,
         top_k: int = 5,
         document_id: str | None = None,
+        history: list[dict[str, str]] | None = None,
     ) -> ChatResponse:
         """Answer a grounded question."""
 
@@ -246,6 +247,7 @@ class DocumentPipeline:
         question: str,
         top_k: int,
         document_id: str | None = None,
+        history: list[dict[str, str]] | None = None,
     ) -> ChatResponse:
         """Answer grounded questions over the indexed corpus."""
 
@@ -253,6 +255,7 @@ class DocumentPipeline:
             question=question,
             top_k=top_k,
             document_id=document_id,
+            history=history,
         )
 
     def _write_processed_artifact(self, result: PipelineResult) -> None:

@@ -71,6 +71,7 @@ class ChatRequest(BaseModel):
     question: str = Field(min_length=1)
     top_k: int = Field(default=5, ge=1, le=20)
     document_id: str | None = None
+    history: list[dict[str, str]] = Field(default_factory=list)
 
 
 class ChatAPIResponse(BaseModel):
@@ -235,6 +236,7 @@ def chat(request: ChatRequest) -> ChatAPIResponse:
             question=request.question,
             top_k=request.top_k,
             document_id=request.document_id,
+            history=request.history,
         )
     except Exception as exc:  # noqa: BLE001 - surface clean API errors
         raise HTTPException(status_code=400, detail=str(exc)) from exc

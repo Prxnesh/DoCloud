@@ -2,6 +2,7 @@ const appState = {
   currentDocumentId: "",
   currentFileName: "",
   latestAnalysis: null,
+  chatHistory: [],
 };
 
 const els = {
@@ -39,6 +40,7 @@ const els = {
   chatTopK: document.getElementById("chat-top-k"),
   chatDocumentId: document.getElementById("chat-document-id"),
   chatLog: document.getElementById("chat-log"),
+  chatSubmitButton: document.querySelector("#chat-form button[type='submit']"),
   navLinks: Array.from(document.querySelectorAll(".sidebar-nav .nav-link")),
   dropzone: document.getElementById("dropzone"),
   resultCardTemplate: document.getElementById("result-card-template"),
@@ -415,7 +417,10 @@ async function handleChat(event) {
   }
 
   appendMessage("user", "You", question);
+  appState.chatHistory.push({ role: "user", text: question });
+  appState.chatHistory = appState.chatHistory.slice(-8);
   els.chatQuestion.value = "";
+  setButtonBusy(els.chatSubmitButton, true, "Thinking...");
 
   try {
     const response = await fetch("/api/v1/chat", {
@@ -424,7 +429,8 @@ async function handleChat(event) {
       body: JSON.stringify({
         question,
         top_k: Number(els.chatTopK.value || 5),
-        document_id: cleanOptional(els.chatDocumentId.value),
+        document_id: cleanOptional(els.chatDocumentId.value) || appState.currentDocumentId || null,
+        history: appState.chatHistory,
       }),
     });
 
@@ -434,8 +440,12 @@ async function handleChat(event) {
     }
 
     appendMessage("assistant", "CloudInsight", payload.answer, payload.results);
+    appState.chatHistory.push({ role: "assistant", text: payload.answer });
+    appState.chatHistory = appState.chatHistory.slice(-8);
   } catch (error) {
     appendMessage("assistant", "CloudInsight", error.message);
+  } finally {
+    setButtonBusy(els.chatSubmitButton, false, "Ask Question");
   }
 }
 
